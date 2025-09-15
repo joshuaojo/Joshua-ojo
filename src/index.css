@@ -1,0 +1,86 @@
+@font-face{
+    font-family: grim;
+    src: url(../src/assets/Fonts/BasementGrotesque-BoldExtraCondensed.ttf)
+}
+
+@font-face{
+    font-family: rim;
+    src: url(../src/assets/Fonts/BasementGrotesque-Regular.ttf)
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-Basement: grim, "san-serif "
+   
+}
+
+
+@theme{
+   --color-Richblack: #020D19;
+    --font-on: rim, "san-serif "
+}
+.text-toggle {
+  transition: all 0s ease;
+}
+
+.text-fill {
+  color: #0f0f0f;
+  -webkit-text-stroke: 0;
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #0f0f0f;
+}
+
+/* HOVERING UI/UX => it becomes OUTLINE, fullstack becomes FILLED */
+.uiux:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px #0f0f0f;
+}
+
+.uiux:hover ~ .fullstack {
+  color: #0f0f0f;
+  -webkit-text-stroke: 0;
+}
+
+/* HOVERING FULLSTACK => it becomes OUTLINE, uiux becomes FILLED */
+.fullstack:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px #0f0f0f;
+}
+
+.fullstack:hover ~ .uiux {
+  color: #0f0f0f;
+  -webkit-text-stroke: 0;
+}
+
+/* Initial hidden state */
+.project-box {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+/* Animate in (fade in + slide up) */
+.project-box.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Animate out (fade out + move up) */
+.project-box.fade-out-up {
+  animation: fadeOutUp 0.6s forwards;
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
