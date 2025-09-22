@@ -47,7 +47,7 @@ const Footer = () => {
             Behance
           </a>
           <a
-            href="https://www.linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/joshua-ojo-494a09244"
             target="_blank"
             rel="noopener noreferrer"
             className="font-on hover:text-blue-500 border-b cursor-pointer text-Richblack"
@@ -55,7 +55,7 @@ const Footer = () => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/joshuaojo"
             target="_blank"
             rel="noopener noreferrer"
             className="font-on hover:text-blue-500 border-b cursor-pointer text-Richblack"
