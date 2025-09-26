@@ -59,9 +59,12 @@ const About = () => {
 
           {/* Contact */}
           <p className="font-on text-Richblack pt-5">Let’s connect!</p>
-          <p className="font-on text-blue-500 text-lg sm:text-xl break-words">
-            ojojoshua123009@gmail.com
-          </p>
+         <a href="mailto:ojojoshua123009@gmail.com" className="block">
+  <p className="font-on text-blue-500 text-lg sm:text-xl break-words hover:underline">
+    ojojoshua123009@gmail.com
+  </p>
+</a>
+
         </div>
       </div>
 

@@ -7,7 +7,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="pt-20 pb-5">
+    <footer className="pt-20  select-none pb-5">
       {/* Divider */}
       <div className="border-t border-gray-600 w-full"></div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex flex-wrap gap-6 justify-center">
           <a
-            href="https://twitter.com/yourusername"
+            href="https://twitter.com/@joshuao01273374"
             target="_blank"
             rel="noopener noreferrer"
             className="font-on hover:text-blue-500 border-b cursor-pointer text-Richblack"
@@ -39,7 +39,7 @@ const Footer = () => {
             X
           </a>
           <a
-            href="https://www.behance.net/yourusername"
+            href="https://www.behance.net/joshuaojo5"
             target="_blank"
             rel="noopener noreferrer"
             className="font-on hover:text-blue-500 border-b cursor-pointer text-Richblack"
@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center md:text-right">
-          <p className="font-on text-Richblack">© Joshua</p>
+          <p className="font-on text-Richblack select-none">© Joshua</p>
         </div>
       </div>
     </footer>

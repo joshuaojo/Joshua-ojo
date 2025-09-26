@@ -14,7 +14,7 @@ const Project = () => {
       title: "Cineverse",
       desc: "A modern movie streaming platform with sleek UI and real-time API integration.",
       img: "Cineverse.avif",
-      link: "https://cineverse.com", // 🔗 replace with real link
+      link: "https://cineverse-eta-seven.vercel.app/login", 
     },
     {
       title: "Zortcloud",
@@ -60,7 +60,7 @@ const Project = () => {
     },
   ];
 
-  // ✅ Animate boxes one by one as they enter viewport
+  
   useEffect(() => {
     boxRefs.current.forEach((box, i) => {
       if (box) {
@@ -89,7 +89,7 @@ const Project = () => {
         My Projects
       </h1>
 
-      {/* Project Boxes - always 1 column */}
+     
       <div
         ref={containerRef}
         className="flex flex-col gap-16 pt-24"
