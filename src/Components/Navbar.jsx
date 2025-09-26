@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [menuOpen]);
 
   return (
-    <nav className="px-6 py-6 sm:px-10 md:px-[60px] flex items-center justify-between bg-white relative">
+    <nav className="px-6 py-6 sm:px-10 md:px-[60px] select-none flex items-center justify-between bg-white relative">
   
       <Link to="/" className="cursor-pointer">
         <p className="font-Basement font-extrabold text-xl text-Richblack">_OJ</p>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <Link to="/Project" className="cursor-pointer hover:underline text-[12px] font-on">Projcets</Link>
         <Link to="/About" className="cursor-pointer hover:underline text-[12px] font-on">About</Link>
         <a
-          href="https://your-resume-link.com/resume.pdf"
+          href="/OJO.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline text-[12px] font-on"

@@ -86,7 +86,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="xl:px-[70px] px-0.5 md:px-[60px] pt-[254px]">
+    <div className="xl:px-[70px] px-0.5 md:px-[60px] select-none pt-[254px]">
       {/* Hero Section */}
       <div>
         <p className="font-on text-center text-Richblack">
